@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATM Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="chatbot-outer">
+        <div class="chatbot-container glass-effect">
+            <div class="chat-header">
+                <div class="chat-header-bg">
+                    <img src="https://ratm.in/images/logo.png" alt="RATM Logo" class="chat-logo">
+                    <div class="chat-title">RATM Chatbot</div>
+                    <div class="chat-subtitle">27 Years of Excellence</div>
+                </div>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="bot-message">👋 <b>Welcome to Rajiv Academy for Technology and Management!</b><br>How can I help you today?</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+                <button onclick="sendMessage()" title="Send"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="send-icon"><line x1="2" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg></button>
+            </div>
+            <div class="preset-questions">
+                <div class="preset-title">✨ Quick Questions</div>
+                <div class="preset-btns">
+                    <button onclick="presetSend('What courses are offered at RATM?')">Courses Offered</button>
+                    <button onclick="presetSend('How do I apply for admission?')">Admission Process</button>
+                    <button onclick="presetSend('What is the placement record?')">Placements</button>
+                    <button onclick="presetSend('Where is RATM located?')">Location</button>
+                    <button onclick="presetSend('Tell me about recent events at RATM.')">Recent Events</button>
+                    <button onclick="presetSend('What makes RATM innovative and modern?')">Modern & Innovative</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/chatbot.js"></script>
+</body>
+</html>
